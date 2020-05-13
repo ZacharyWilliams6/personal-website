@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.aa64f780.chunk.css",
+    "main.js": "/personal-website/static/js/main.a69b5eda.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.a69b5eda.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.3708cbaa.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.3708cbaa.js.map",
+    "static/js/2.92c9acdb.chunk.js": "/personal-website/static/js/2.92c9acdb.chunk.js",
+    "static/js/2.92c9acdb.chunk.js.map": "/personal-website/static/js/2.92c9acdb.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "precache-manifest.4f1df630b9829bb6428c5e0edb5b092f.js": "/personal-website/precache-manifest.4f1df630b9829bb6428c5e0edb5b092f.js",
+    "service-worker.js": "/personal-website/service-worker.js",
+    "static/css/main.aa64f780.chunk.css.map": "/personal-website/static/css/main.aa64f780.chunk.css.map",
+    "static/js/2.92c9acdb.chunk.js.LICENSE.txt": "/personal-website/static/js/2.92c9acdb.chunk.js.LICENSE.txt",
+    "static/media/bottomSectionBar.svg": "/personal-website/static/media/bottomSectionBar.04d57656.svg",
+    "static/media/cartoonzach.svg": "/personal-website/static/media/cartoonzach.6302ef23.svg",
+    "static/media/cartoonzachthinking.svg": "/personal-website/static/media/cartoonzachthinking.1cecc784.svg",
+    "static/media/cornerThing.svg": "/personal-website/static/media/cornerThing.48b4efa1.svg",
+    "static/media/style.css": "/personal-website/static/media/font.9a950abc.woff",
+    "static/media/topSectionBar.svg": "/personal-website/static/media/topSectionBar.b97190e5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3708cbaa.js",
+    "static/js/2.92c9acdb.chunk.js",
+    "static/css/main.aa64f780.chunk.css",
+    "static/js/main.a69b5eda.chunk.js"
+  ]
+}
