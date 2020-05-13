@@ -1,0 +1,357 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3901430, 2020-05-11T13:08:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Code-Pro-Light-LC by Fontfabric
+ * URL: https://www.myfonts.com/fonts/font-fabric/code-pro/light-lc/
+ * Copyright: Copyright &amp;#x00A9; 2011 By Svetoslav Simov &amp;#x00A9; Fontfabric, LLC. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b87f6");
+  
+@font-face {
+  font-family: 'Code-Pro-Light-LC';
+  src: url('webFonts/Code-Pro-Light-LC/font.woff2') format('woff2'), url('webFonts/Code-Pro-Light-LC/font.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24pt;
+    color: black;
+    text-decoration: none;
+    font-family: 'Code-Pro-Light-LC', monospace;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.cornerImage {
+    width: calc((400) * ((100vw - 300px) / (1920 - 300)));
+    height: auto;
+}
+
+.sideImage {
+    width: calc(100px + (150) * ((100vw - 300px) / (1920 - 300))) !important;
+    height: auto;
+}
+
+.newSectionTopBar {
+    margin-top: 75px;
+}
+
+.newSectionBottomBar {
+    margin-bottom: 75px;
+}
+
+a {
+    font-weight: 100;
+}
+
+.defaultStyle{
+    color:#718de8;
+}
+
+.selectedStyle {
+    color:#a671e8;
+    font-weight: bold;
+}
+
+.headerContainer {
+    width: 100%;
+    color: #718de8;
+    font-size: 100%;
+    background-color: #f0f0f0;
+    height: 65px;
+    text-align: left;
+    box-shadow: 0px 5px 8px #d4d4d4;
+    display: table;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+
+.menuItemsContainer {
+    width: 100%;
+    color: #718de8;
+    font-size: 100%;
+    background-color: #f0f0f0;
+    height: 65px;
+    text-align: right;
+    display: table-cell;
+}
+
+.menuItem {
+    padding: 10px;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+.table {
+    display: table;
+}
+
+.heyImZach {
+    font-size: calc(40px + (80 - 24) * ((100vw - 300px) / (1920 - 300)));
+    border-bottom: rgb(166, 113, 232) 4px solid;
+}
+
+.thankYou {
+    font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+    margin-top: 20px;
+}
+
+.moreInformation {
+    font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+    margin-top: 20px;
+}
+
+.btn_myResume {
+    border: none;
+    background-color: #718de8;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 90%;
+    cursor: pointer;
+}
+
+.btn_myResume:hover {
+    background-color: #657dcc;
+    transition: background-color 0.25s;
+}
+
+.btn_contactMe {
+    border: none;
+    background-color: white;
+    color: #a671e8;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 90%;
+    cursor: pointer;
+    -webkit-box-shadow:inset 0px 0px 0px 2px #a671e8;
+    -moz-box-shadow:inset 0px 0px 0px 2px #a671e8;
+    box-shadow:inset 0px 0px 0px 2px #a671e8;
+}
+
+.btn_contactMe:hover {
+    background-color: #a671e8;
+    color: white;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+.skillSetsButtonStyle {
+    width: 300px;
+    height: 80px;
+    background-color: #eee;
+    font-size: 75%;
+    border: none;
+    border-bottom: 2px #718de8 solid;
+    cursor: pointer;
+}
+
+.skillSetsButtonStyle:hover {
+    background-color: #dfdfdf;
+}
+
+.leftSection {
+    display: table-cell;
+    width: 550px;
+    font-size: 70%;
+    padding-right: 15px;
+    padding-left: 40px;
+    line-height: 35px;
+}
+
+.rightSection {
+    display: table-cell;
+    padding-left: 25px;
+    width: 550px;
+    font-size: 70%;
+    line-height: 35px;
+    position: relative;
+    border-left: 3px #718de8 solid;
+}
+
+.leftSection p {
+    width: 515px;
+}
+
+.leftSection h3 {
+    width: 543px;
+}
+
+.leftSection p, .rightSection p {
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.newSection {
+    font-size: 45pt;
+    width: 40%;
+}
+
+.scalingFontSize {
+    font-size: calc(15px + (26) * ((100vw - 300px) / (1920 - 300)));
+}
+
+@media (max-width: 1399px) {
+    .table {
+        display: block;
+    }
+    .skillSetsButtonStyle {
+        width: 100%;
+    }
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .newSectionTopBar {
+        margin-top: 45px;
+    }
+    
+    .newSectionBottomBar {
+        margin-bottom: 45px;
+    }
+
+    .leftSection {
+        display: block;
+        width: 90%;
+        font-size: 50%;
+        padding: 0;
+        padding-top: 20px;
+        overflow: wrap;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+    
+    .rightSection {
+        display: block;
+        width: 90%;
+        font-size: 50%;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 35px;
+        border-top: 2px #718de8 solid;
+        border-left: none;
+    }
+
+    .newSection {
+        font-size: 32pt;
+        width: 100%;
+    }
+    .leftSection p {
+        width: 100%;
+    }
+    
+    .leftSection h3 {
+        width: 100%;
+    }
+
+    .leftIntroTableCell {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .rightIntroTableCell {
+        display: block !important;
+        margin-top: 30px;
+        width: 100% !important;
+    }
+
+    .leftIntroTableCell img {
+        margin: 0 auto;
+        transform: translate(10%);
+    }
+
+    .rightIntroTableCell img {
+        margin: -30px auto 20px auto;
+    }
+
+    .heyImZach {
+        text-align: center;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none;
+    }
+    
+    .thankYou {
+        text-align: center;
+        padding: 0 !important;
+        margin: 10px 0 0 0 !important;
+    }
+
+    .moreInformation {
+        text-align: center;
+        padding: 0 !important;
+        margin: 20px 0 0 0 !important;
+    }
+
+    .btn_contactMe {
+        text-align: center;
+    }
+
+    .btn_myResume {
+        text-align: center;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        .heyImZach {
+            border: none;
+        }
+
+        .rightIntroTableCell {
+            width: 90% !important;
+        }
+
+        .rightIntroTableCell img {
+            transform: translate(-15%);
+        }
+
+        .btn_contactMe {
+            display: block;
+            margin: 15px auto 0px auto !important;
+        }
+    
+        .btn_myResume {
+            display: block;
+            margin: 25px auto 0px auto !important;
+        }
+
+        .newSectionTopBar {
+            margin-top: 20px;
+        }
+        
+        .newSectionBottomBar {
+            margin-bottom: 20px;
+        }
+
+    }
+
+  }
