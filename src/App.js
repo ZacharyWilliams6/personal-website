@@ -2,9 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Route, HashRouter } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './style.css'
-import fillerImage from './images/cartoonzach.svg'
-import thinkingImage from './images/cartoonzachthinking.svg'
-import cornerObject from './images/cornerThing.svg'
+import zachTop from './images/za_portrait_1.svg'
+import thinkingImage from './images/za_portrait_2.svg'
 import Header from './components/Header'
 import SkillSetsTable from './components/SkillSetsTable'
 import NewSection from './components/NewSection'
@@ -14,10 +13,9 @@ function App() {
     <HashRouter>
     <Header />
       <Route exact={true} path="/" >
-        <img className='cornerImage' alt="" src={cornerObject} style={{position: 'absolute', top: '50px', zIndex: '0'}}/>
-        <div className="container" style={{marginTop: '225px'}}>
+        <div className="container" style={{marginTop: '150px', display:'block', position: 'relative'}}>
           <div style={{display: 'table', width: '100%'}}>
-            <div className='leftIntroTableCell' style={{display: 'table-cell', width: '25%', textAlign: 'center', zIndex: '0', position: 'relative'}}><img className='sideImage' alt ="Cartoon Zachary Williams" src={fillerImage}/></div>
+            <div className='leftIntroTableCell' style={{display: 'table-cell', width: '25%', textAlign: 'center', zIndex: '0', position: 'relative'}}><img className='sideImage' alt ="Cartoon Zachary Williams" src={zachTop}/></div>
             <div className='rightIntroTableCell' style={{display: 'table-cell', width: '75%', verticalAlign: 'top', marginLeft:'20px'}}>
               <h3 className='heyImZach' style={{color: '#a671e8'}}>Hey, I'm Zach!</h3>
               <h4 className='thankYou' style={{color: '#718de8', marginTop: '10px !important'}}>Thank you for taking the time to navigate to my website!</h4>  
@@ -54,10 +52,8 @@ function App() {
           </div>
         </div>
       </Route>
-      <Route path="/blog">
-        <img className='cornerImage' alt="" src={cornerObject} style={{position: 'absolute', top: '50px', zIndex: '0'}}/></Route>
-      <Route path="/projects">
-        <img className='cornerImage' alt="" src={cornerObject} style={{position: 'absolute', top: '50px', zIndex: '0'}}/>Projects Content</Route>
+      <Route path="/blog"></Route>
+      <Route path="/projects">Projects Content</Route>
     </HashRouter>
   );
 }

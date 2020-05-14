@@ -2,6 +2,7 @@ import React from 'react'
 import MenuItem from './MenuItem'
 import { v4 as uuidv4 } from 'uuid';
 import '../style.css'
+import cornerObject from '../images/cornerThing.svg'
 
 let h1StyleZachary = {
     paddingLeft: '30px',
@@ -64,13 +65,18 @@ export default class Header extends React.Component {
     render(){
         return (
             <div className ="headerContainer">
-                <h1 style={h1StyleZachary}>zachary</h1><h1 style={h1StyleWilliams}>williams</h1>
-                    <div className="menuItemsContainer">
+                <div className='nameContainer'>
+                    <h1 className='zachary' style={h1StyleZachary}>zachary</h1>
+                    <h1 className='williams' style={h1StyleWilliams}>williams</h1>
+                </div>
+                <div className="menuItemsContainer">
                     {this.state.MenuItems.map( menuItem => 
                         <MenuItem key = {menuItem.uuid} title={menuItem.title} selected={menuItem.selected} link={menuItem.link ? menuItem.link : ""} selectPage={this.onSelectPage.bind(this)} />
                     )}
-                    </div>
+                </div>
+                <img className='cornerImage' alt="" src={cornerObject} style={{position: 'absolute', top: '70px', left: '0', zIndex: '-1'}}/>
             </div>
+            
         );
     }
 }

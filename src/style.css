@@ -1,25 +1,5 @@
-/**
- * @license
- * MyFonts Webfont Build ID 3901430, 2020-05-11T13:08:52-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: Code-Pro-Light-LC by Fontfabric
- * URL: https://www.myfonts.com/fonts/font-fabric/code-pro/light-lc/
- * Copyright: Copyright &amp;#x00A9; 2011 By Svetoslav Simov &amp;#x00A9; Fontfabric, LLC. All rights reserved.
- * 
- * 
- * 
- * © 2020 MyFonts Inc
-*/
-
-
-/* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/3b87f6");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
   
 @font-face {
   font-family: 'Code-Pro-Light-LC';
@@ -42,12 +22,13 @@
 }
 
 .cornerImage {
-    width: calc((400) * ((100vw - 300px) / (1920 - 300)));
+    width: calc((300) * ((100vw - 900px) / (1920 - 900)));
     height: auto;
 }
 
 .sideImage {
-    width: calc(100px + (150) * ((100vw - 300px) / (1920 - 300))) !important;
+    width: calc(165px + (100) * ((100vw - 300px) / (1920 - 300))) !important;
+    margin-bottom: -60px;
     height: auto;
 }
 
@@ -81,7 +62,6 @@ a {
     text-align: left;
     box-shadow: 0px 5px 8px #d4d4d4;
     display: table;
-    position: absolute;
     top: 0px;
     z-index: 2;
 }
@@ -205,15 +185,26 @@ a {
 }
 
 .newSection {
-    font-size: 45pt;
     width: 40%;
+    font-size: 48pt;
+    font-family: 'Bebas Neue', 'Arial';
+    font-weight: 100 !important;
+    letter-spacing: 4px;
 }
+
+
 
 .scalingFontSize {
     font-size: calc(15px + (26) * ((100vw - 300px) / (1920 - 300)));
 }
 
 @media (max-width: 1399px) {
+
+    .cornerImage {
+        width: calc((600) * ((100vw - 200px) / (1920 - 200)));
+        height: auto;
+    }
+
     .table {
         display: block;
     }
@@ -224,6 +215,7 @@ a {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 80px !important;
     }
 
     .newSectionTopBar {
@@ -257,9 +249,13 @@ a {
     }
 
     .newSection {
-        font-size: 32pt;
+        font-size: 48pt;
         width: 100%;
+        font-family: 'Bebas Neue';
+        font-weight: 100 !important;
+        letter-spacing: 4px;
     }
+
     .leftSection p {
         width: 100%;
     }
@@ -271,21 +267,14 @@ a {
     .leftIntroTableCell {
         display: block !important;
         width: 100% !important;
+        margin-top: 30px;
     }
 
     .rightIntroTableCell {
         display: block !important;
         margin-top: 30px;
         width: 100% !important;
-    }
-
-    .leftIntroTableCell img {
-        margin: 0 auto;
-        transform: translate(10%);
-    }
-
-    .rightIntroTableCell img {
-        margin: -30px auto 20px auto;
+        margin-left: 0px !important;
     }
 
     .heyImZach {
@@ -321,26 +310,94 @@ a {
         text-align: center;
     }
 
+    
+    @media (max-width: 768px) {
+        .container {
+            margin-top: 0px !important;
+        }
+
+        .cornerImage {
+            top: 100px !important;
+            width: calc((450) * ((100vw - 160px) / (1920 - 900))) !important;
+            height: auto;
+        }
+        
+        .headerContainer {
+            display: block;
+            height: auto !important;
+            margin-bottom: 35px;
+            padding-top: 5px;
+        }
+        
+        .nameContainer {
+            width: 100vw !important;
+            padding-bottom: 10px;
+            text-align: center !important;
+            margin: 0 auto !important;
+            display: block;
+        }
+
+        .zachary {
+            display: inline-block !important;
+            padding-left: 0px !important;
+        }
+
+        .williams {
+            display: inline-block !important;
+        }
+
+        .menuItemsContainer {
+            height: auto;
+            width: 100vw;
+            position: relative;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding-bottom: 5px;
+        }
+
+        .thankYou {
+            font-size: calc(24px + (30 - 24) * ((100vw - 300px) / (1920 - 300)));
+            margin-top: 20px;
+        }
+        
+        .moreInformation {
+            font-size: calc(20px + (1) * ((100vw - 300px) / (1920 - 300))) !important;
+            margin-top: 20px;
+        }
+
+        .leftIntroTableCell {
+            text-align:center;
+        }
+
+        .defaultStyle {
+            font-size: 18pt;
+        }
+
+        .selectedStyle {
+            font-size: 18pt;
+        }
+
+    }
+
     @media (max-width: 600px) {
         .heyImZach {
             border: none;
         }
 
         .rightIntroTableCell {
-            width: 90% !important;
-        }
-
-        .rightIntroTableCell img {
-            transform: translate(-15%);
+            width: 100% !important;
         }
 
         .btn_contactMe {
             display: block;
             margin: 15px auto 0px auto !important;
+            padding: 10px 25px;
+            
         }
     
         .btn_myResume {
             display: block;
+            padding: 10px 25px;
             margin: 25px auto 0px auto !important;
         }
 
