@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './style.css'
 import zachTop from './images/za_portrait_1.svg'
@@ -10,7 +10,7 @@ import NewSection from './components/NewSection'
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
     <Header />
       <Route exact={true} path="/" >
         <div className="container" style={{marginTop: '150px', display:'block', position: 'relative'}}>
@@ -39,7 +39,9 @@ function App() {
             </div>
           </div>
         <NewSection key={uuidv4()} sectionName="MY SKILLSETS"/>
-        <SkillSetsTable />
+        <div className='retinaSkillSetsTable'>
+          <SkillSetsTable />
+        </div>
         <NewSection key={uuidv4()} sectionName="YOU HIRING?"/>
         <div style={{paddingBottom: '150px'}}>
           <h4 className='scalingFontSize' style={{color: '#2879ff', textAlign: 'center'}}>
@@ -54,7 +56,7 @@ function App() {
       </Route>
       <Route path="/blog"></Route>
       <Route path="/projects">Projects Content</Route>
-    </HashRouter>
+    </Router>
   );
 }
 

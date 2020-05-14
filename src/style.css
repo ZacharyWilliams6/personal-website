@@ -6,28 +6,446 @@
   src: url('webFonts/Code-Pro-Light-LC/font.woff2') format('woff2'), url('webFonts/Code-Pro-Light-LC/font.woff') format('woff');
 }
 
+@media 
+(-webkit-min-device-pixel-ratio: 1){ 
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 24pt;
+        color: black;
+        text-decoration: none;
+        font-family: 'Code-Pro-Light-LC', monospace;
+    }
+    
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .cornerImage {
+        width: calc((300) * ((100vw - 900px) / (1920 - 900)));
+        height: auto;
+    }
+    
+    .sideImage {
+        width: calc(165px + (100) * ((100vw - 300px) / (1920 - 300))) !important;
+        margin-bottom: -60px;
+        height: auto;
+    }
+    
+    .newSectionTopBar {
+        margin-top: 75px;
+    }
+    
+    .newSectionBottomBar {
+        margin-bottom: 75px;
+    }
+    
+    a {
+        font-weight: 100;
+    }
+    
+    .defaultStyle{
+        color:#718de8;
+    }
+    
+    .selectedStyle {
+        color:#a671e8;
+        font-weight: bold;
+    }
+    
+    .headerContainer {
+        width: 100%;
+        color: #718de8;
+        font-size: 100%;
+        background-color: #f0f0f0;
+        height: 65px;
+        text-align: left;
+        box-shadow: 0px 5px 8px #d4d4d4;
+        display: table;
+        top: 0px;
+        z-index: 2;
+    }
+    
+    .menuItemsContainer {
+        width: 100%;
+        color: #718de8;
+        font-size: 100%;
+        background-color: #f0f0f0;
+        height: 65px;
+        text-align: right;
+        display: table-cell;
+    }
+    
+    .menuItem {
+        padding: 10px;
+        padding-right: 2%;
+        display: inline-block;
+    }
+    
+    .table {
+        display: table;
+    }
+    
+    .heyImZach {
+        font-size: calc(40px + (80 - 24) * ((100vw - 300px) / (1920 - 300)));
+        border-bottom: rgb(166, 113, 232) 4px solid;
+    }
+    
+    .thankYou {
+        font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+        margin-top: 20px;
+    }
+    
+    .moreInformation {
+        font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+        margin-top: 20px;
+    }
+    
+    .btn_myResume {
+        border: none;
+        background-color: #718de8;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 90%;
+        cursor: pointer;
+    }
+    
+    .btn_myResume:hover {
+        background-color: #657dcc;
+        transition: background-color 0.25s;
+    }
+    
+    .btn_contactMe {
+        border: none;
+        background-color: white;
+        color: #a671e8;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-size: 90%;
+        cursor: pointer;
+        -webkit-box-shadow:inset 0px 0px 0px 2px #a671e8;
+        -moz-box-shadow:inset 0px 0px 0px 2px #a671e8;
+        box-shadow:inset 0px 0px 0px 2px #a671e8;
+    }
+    
+    .btn_contactMe:hover {
+        background-color: #a671e8;
+        color: white;
+        transition: color 0.25s, background-color 0.25s;
+    }
+    
+    .skillSetsButtonStyle {
+        width: 300px;
+        height: 80px;
+        background-color: #eee;
+        font-size: 75%;
+        border: none;
+        border-bottom: 2px #718de8 solid;
+        cursor: pointer;
+    }
+    
+    .skillSetsButtonStyle:hover {
+        background-color: #dfdfdf;
+    }
+    
+    .leftSection {
+        display: table-cell;
+        width: 550px;
+        font-size: 70%;
+        padding-right: 15px;
+        padding-left: 40px;
+        line-height: 35px;
+    }
+    
+    .rightSection {
+        display: table-cell;
+        padding-left: 25px;
+        width: 550px;
+        font-size: 70%;
+        line-height: 35px;
+        position: relative;
+        border-left: 3px #718de8 solid;
+    }
+    
+    .leftSection p {
+        width: 515px;
+        margin-bottom: 20px;
+    }
+    
+    .leftSection h3 {
+        width: 543px;
+    }
+    
+    .leftSection p, .rightSection p {
+        font-size: 100%;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    
+    .newSection {
+        width: 40%;
+        font-size: 48pt;
+        font-family: 'Bebas Neue', 'Arial';
+        font-weight: 100 !important;
+        letter-spacing: 4px;
+    }
+    
+    
+    
+    .scalingFontSize {
+        font-size: calc(15px + (26) * ((100vw - 300px) / (1920 - 300)));
+    }
+    
+    @media (max-width: 1399px) {
+    
+        .cornerImage {
+            width: calc((600) * ((100vw - 200px) / (1920 - 200)));
+            height: auto;
+        }
+    
+        .table {
+            display: block;
+        }
+        .skillSetsButtonStyle {
+            width: 100%;
+        }
+        .container {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 80px !important;
+        }
+    
+        .newSectionTopBar {
+            margin-top: 45px;
+        }
+        
+        .newSectionBottomBar {
+            margin-bottom: 45px;
+        }
+    
+        .leftSection {
+            display: block;
+            width: 90%;
+            font-size: 50%;
+            padding: 0;
+            padding-top: 20px;
+            overflow: wrap;
+            margin: 0 auto;
+            line-height: 35px;
+        }
+        
+        .rightSection {
+            display: block;
+            width: 90%;
+            font-size: 50%;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 35px;
+            border-top: 2px #718de8 solid;
+            border-left: none;
+        }
+    
+        .newSection {
+            font-size: 48pt;
+            width: 100%;
+            font-family: 'Bebas Neue';
+            font-weight: 100 !important;
+            letter-spacing: 4px;
+        }
+    
+        .leftSection p {
+            width: 100%;
+        }
+        
+        .leftSection h3 {
+            width: 100%;
+        }
+    
+        .leftIntroTableCell {
+            display: block !important;
+            width: 100% !important;
+            margin-top: 30px;
+        }
+    
+        .rightIntroTableCell {
+            display: block !important;
+            margin-top: 30px;
+            width: 100% !important;
+            margin-left: 0px !important;
+        }
+    
+        .heyImZach {
+            text-align: center;
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none;
+        }
+        
+        .thankYou {
+            text-align: center;
+            padding: 0 !important;
+            margin: 10px 0 0 0 !important;
+        }
+    
+        .moreInformation {
+            text-align: center;
+            padding: 0 !important;
+            margin: 20px 0 0 0 !important;
+        }
+    
+        .btn_contactMe {
+            text-align: center;
+        }
+    
+        .btn_myResume {
+            text-align: center;
+        }
+    
+        .buttonContainer {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 0px !important;
+            }
+    
+            .cornerImage {
+                top: 100px !important;
+                width: calc((450) * ((100vw - 160px) / (1920 - 900))) !important;
+                height: auto;
+            }
+            
+            .headerContainer {
+                display: block;
+                height: auto !important;
+                margin-bottom: 35px;
+                padding-top: 5px;
+            }
+            
+            .nameContainer {
+                width: 100vw !important;
+                padding-bottom: 10px;
+                text-align: center !important;
+                margin: 0 auto !important;
+                display: block;
+            }
+    
+            .zachary {
+                display: inline-block !important;
+                padding-left: 0px !important;
+            }
+    
+            .williams {
+                display: inline-block !important;
+            }
+    
+            .menuItemsContainer {
+                height: auto;
+                width: 100vw;
+                position: relative;
+                text-align: center;
+                background-color: #f9f9f9;
+                padding-bottom: 5px;
+            }
+    
+            .thankYou {
+                font-size: calc(24px + (30 - 24) * ((100vw - 300px) / (1920 - 300)));
+                margin-top: 20px;
+            }
+            
+            .moreInformation {
+                font-size: calc(20px + (1) * ((100vw - 300px) / (1920 - 300))) !important;
+                margin-top: 20px;
+            }
+    
+            .leftIntroTableCell {
+                text-align:center;
+            }
+    
+            .defaultStyle {
+                font-size: 18pt;
+            }
+    
+            .selectedStyle {
+                font-size: 18pt;
+            }
+    
+        }
+    
+        @media (max-width: 600px) {
+            .heyImZach {
+                border: none;
+            }
+    
+            .rightIntroTableCell {
+                width: 100% !important;
+            }
+    
+            .btn_contactMe {
+                display: block;
+                margin: 15px auto 0px auto !important;
+                padding: 10px 25px;
+                
+            }
+        
+            .btn_myResume {
+                display: block;
+                padding: 10px 25px;
+                margin: 25px auto 0px auto !important;
+            }
+    
+            .newSectionTopBar {
+                margin-top: 20px;
+            }
+            
+            .newSectionBottomBar {
+                margin-bottom: 20px;
+            }
+    
+        }
+    
+      }
+}
+
+/* 2.0 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 96){ 
+    
 * {
     margin: 0;
     padding: 0;
-    font-size: 24pt;
+    font-size: 12pt;
     color: black;
     text-decoration: none;
     font-family: 'Code-Pro-Light-LC', monospace;
 }
 
 .container {
-    width: 1400px;
+    width: 700px;
     margin: 0 auto;
     display: block;
+    margin-top: 60px !important;
 }
 
 .cornerImage {
-    width: calc((300) * ((100vw - 900px) / (1920 - 900)));
+    width: calc((600) * ((100vw - 450px) / (1920 - 450)));
+    top: 30px !important;
     height: auto;
 }
 
 .sideImage {
-    width: calc(165px + (100) * ((100vw - 300px) / (1920 - 300))) !important;
+    width: calc(100px + (100) * ((100vw - 150px) / (1920 - 150))) !important;
     margin-bottom: -60px;
     height: auto;
 }
@@ -46,19 +464,29 @@ a {
 
 .defaultStyle{
     color:#718de8;
+    font-size: 14pt !important;
 }
 
 .selectedStyle {
     color:#a671e8;
     font-weight: bold;
+    font-size: 14pt !important;
+}
+
+.zachary {
+    font-size: 14pt !important;
+}
+
+.williams {
+    font-size: 14pt !important;
 }
 
 .headerContainer {
     width: 100%;
     color: #718de8;
-    font-size: 100%;
+    font-size: 50%;
     background-color: #f0f0f0;
-    height: 65px;
+    height: 10px;
     text-align: left;
     box-shadow: 0px 5px 8px #d4d4d4;
     display: table;
@@ -69,15 +497,16 @@ a {
 .menuItemsContainer {
     width: 100%;
     color: #718de8;
-    font-size: 100%;
+    font-size: 50%;
     background-color: #f0f0f0;
-    height: 65px;
+    height: 10px;
     text-align: right;
     display: table-cell;
+    padding-bottom: 5px;
 }
 
 .menuItem {
-    padding: 10px;
+    padding: 2px;
     padding-right: 2%;
     display: inline-block;
 }
@@ -86,19 +515,26 @@ a {
     display: table;
 }
 
+.retinaSkillSetsTable {
+    margin-top: -60px;
+}
+
 .heyImZach {
-    font-size: calc(40px + (80 - 24) * ((100vw - 300px) / (1920 - 300)));
-    border-bottom: rgb(166, 113, 232) 4px solid;
+    font-size: calc(30px + (40 - 12) * ((100vw - 300px) / (1920 - 300)));
+    border-bottom: rgb(166, 113, 232) 2px solid;
+    margin-left: 8px;
 }
 
 .thankYou {
-    font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(11px + (40 - 12) * ((100vw - 300px) / (1920 - 300)));
     margin-top: 20px;
+    margin-left: 8px;
 }
 
 .moreInformation {
-    font-size: calc(30px + (40 - 24) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(8px + (40 - 12) * ((100vw - 300px) / (1920 - 300))) !important;
     margin-top: 20px;
+    margin-left: 8px;
 }
 
 .btn_myResume {
@@ -107,9 +543,10 @@ a {
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 10px 25px;
     font-size: 90%;
     cursor: pointer;
+    margin-left: 8px;
 }
 
 .btn_myResume:hover {
@@ -123,7 +560,7 @@ a {
     color: #a671e8;
     font-weight: bold;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 10px 25px;
     font-size: 90%;
     cursor: pointer;
     -webkit-box-shadow:inset 0px 0px 0px 2px #a671e8;
@@ -138,12 +575,12 @@ a {
 }
 
 .skillSetsButtonStyle {
-    width: 300px;
-    height: 80px;
+    width: 175px;
+    height: 40px;
     background-color: #eee;
     font-size: 75%;
     border: none;
-    border-bottom: 2px #718de8 solid;
+    border-bottom: 1px #718de8 solid;
     cursor: pointer;
 }
 
@@ -153,7 +590,7 @@ a {
 
 .leftSection {
     display: table-cell;
-    width: 550px;
+    width: 250px;
     font-size: 70%;
     padding-right: 15px;
     padding-left: 40px;
@@ -163,46 +600,63 @@ a {
 .rightSection {
     display: table-cell;
     padding-left: 25px;
-    width: 550px;
+    width: 250px;
     font-size: 70%;
     line-height: 35px;
     position: relative;
-    border-left: 3px #718de8 solid;
+    border-left: 2px #718de8 solid;
 }
 
 .leftSection p {
-    width: 515px;
+    width: 240px;
+    line-height: 12px;
 }
 
 .leftSection h3 {
-    width: 543px;
+    width: 250px;
+    margin-bottom: -15px;
 }
 
 .leftSection p, .rightSection p {
     font-size: 100%;
     font-weight: bold;
     margin-top: 20px;
+    line-height: 12px;
 }
 
 .newSection {
     width: 40%;
-    font-size: 48pt;
+    font-size: 36pt;
     font-family: 'Bebas Neue', 'Arial';
     font-weight: 100 !important;
     letter-spacing: 4px;
 }
 
-
-
-.scalingFontSize {
-    font-size: calc(15px + (26) * ((100vw - 300px) / (1920 - 300)));
+.newSectionTopBar {
+    height: 8px !important;
+    margin-top: 40px;
 }
 
-@media (max-width: 1399px) {
+.newSectionBottomBar {
+    height: 8px !important;
+    margin-bottom: 30px;
+}
+
+.scalingFontSize {
+    font-size: calc(8px + (40 - 12) * ((100vw - 300px) / (1920 - 300))) !important;
+}
+
+@media (max-width: 700px) {
+
+    .retinaSkillSetsTable {
+        margin-top: 0px !important;
+    }
 
     .cornerImage {
-        width: calc((600) * ((100vw - 200px) / (1920 - 200)));
+        width: calc((500) * ((100vw - 200px) / (1920 - 200)));
         height: auto;
+        top: 0 !important;
+        margin-top: -50px;
     }
 
     .table {
@@ -215,15 +669,17 @@ a {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 80px !important;
+        margin-top: 45px !important;
     }
 
     .newSectionTopBar {
-        margin-top: 45px;
+        margin-top: 70px;
+        height: 6px !important;
     }
     
     .newSectionBottomBar {
         margin-bottom: 45px;
+        height: 6px !important;
     }
 
     .leftSection {
@@ -249,7 +705,7 @@ a {
     }
 
     .newSection {
-        font-size: 48pt;
+        font-size: 24pt;
         width: 100%;
         font-family: 'Bebas Neue';
         font-weight: 100 !important;
@@ -258,6 +714,7 @@ a {
 
     .leftSection p {
         width: 100%;
+        margin-bottom: 20px;
     }
     
     .leftSection h3 {
@@ -275,6 +732,10 @@ a {
         margin-top: 30px;
         width: 100% !important;
         margin-left: 0px !important;
+    }
+
+    .rightIntroTableCell img {
+        margin-top: -30px;
     }
 
     .heyImZach {
@@ -312,6 +773,7 @@ a {
 
     
     @media (max-width: 768px) {
+
         .container {
             margin-top: 0px !important;
         }
@@ -412,3 +874,4 @@ a {
     }
 
   }
+}
